@@ -1,0 +1,65 @@
+<div>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar class="toolbar">
+        <p class="menu">MENU</p>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-list>
+        <ion-item>
+          <ion-label
+            [routerLink]="['/tabs/login']"
+            style="font-family: cursive; font-weight: 600; font-size: 1.2rem"
+            >Login</ion-label
+          >
+        </ion-item>
+        <ion-item>
+          <ion-label
+            [routerLink]="['/tabs/tab2']"
+            style="font-family: cursive; font-weight: 600; font-size: 1.2rem"
+            >Mood Tracker</ion-label
+          >
+        </ion-item>
+        <ion-item>
+          <ion-label
+            [routerLink]="['/tabs/tab3']"
+            style="font-family: cursive; font-weight: 600; font-size: 1.2rem"
+            >Rainbow Rays</ion-label
+          >
+        </ion-item>
+        <ion-item>
+          <ion-label
+            [routerLink]="['/tabs/tab4']"
+            style="font-family: cursive; font-weight: 600; font-size: 1.2rem"
+            >Rainbow Goals</ion-label
+          >
+        </ion-item>
+        <ion-item>
+          <ion-label
+            [routerLink]="['/tabs/tab5']"
+            style="font-family: cursive; font-weight: 600; font-size: 1.2rem"
+            >Therapy Tracker</ion-label
+          >
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar class="t">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <p class="date">{{today | date}}</p>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content [fullscreen]="true" *ngIf="profile" class="main_content">
+      <ion-title class="name">Hey {{ profile.first_name }}!</ion-title>
+      <p>How are you feeling today?</p>
+    </ion-content>
+  </div>
+</div>
+<ion-footer collapse="fade" class="ion-no-border">
+  <ion-img src="../../assets/2.png"></ion-img>
+</ion-footer>

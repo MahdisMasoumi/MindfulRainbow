@@ -1,0 +1,46 @@
+ion-item {
+  font-family: cursive;
+}
+.container {
+  display: flex;
+  width: 100%;
+}
+.left-elements {
+  text-align: center;
+  flex: 2;
+  padding-left: 16px;
+  padding-right: 10px;
+  color: black;
+}
+.right-element {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+hr {
+  margin: 0 20px;
+  border-top: 1px solid rgb(36, 85, 76);
+}
+ion-card {
+  border-radius: 2rem;
+}
+.date {
+  padding: 5px 20px;
+  border-radius: 1rem;
+  background-color: rgb(244, 195, 251);
+  color: rgb(53, 131, 240);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.days {
+  color: black;
+  font-weight: 600;
+}
+.delete {
+  background-color: rgb(247, 0, 0);
+}
+.edit {
+  background-color: rgb(255, 101, 40);
+}

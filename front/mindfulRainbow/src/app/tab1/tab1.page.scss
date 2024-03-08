@@ -1,0 +1,56 @@
+ion-title {
+  font-family: cursive;
+  font-size: 2rem;
+  color: rgb(86, 83, 80);
+  letter-spacing: 3px;
+  font-style: initial;
+  font-weight: 600;
+}
+
+.main_content {
+  --background: rgb(255, 250, 248);
+}
+
+.date {
+  font-family: cursive;
+  color: rgb(86, 83, 80);
+  font-size: 1.2rem;
+  padding-left: 30%;
+}
+.menu {
+  font-family: cursive;
+  color: rgb(86, 83, 80);
+  font-size: 1.5rem;
+}
+.header {
+  background-color: rgb(255, 245, 242);
+}
+.toolbar {
+  --background: rgb(255, 224, 214);
+}
+.name {
+  margin-top: 4rem;
+}
+.t {
+  --background: rgb(255, 245, 242);
+}
+
+ion-menu::part(backdrop) {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+ion-menu::part(container) {
+  border-radius: 0 20px 20px 0;
+  box-shadow: 4px 0px 16px rgb(255, 218, 207);
+}
+p {
+  font-family: cursive;
+  color: rgb(86, 83, 80);
+  font-size: 1.2rem;
+  margin-left: 1.2rem;
+  font-weight: 600;
+}
+ion-label {
+  font-family: cursive;
+  color: rgb(86, 83, 80);
+}

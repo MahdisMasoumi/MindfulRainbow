@@ -1,0 +1,34 @@
+<ion-content [fullscreen]="true">
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div>
+      <ion-title> Sign In</ion-title>
+      <p class="subTitle">
+        Don't have an account?<a
+          [routerLink]="['/register']"
+          style="color: rgb(99, 184, 239); padding-left: 1rem"
+          >Get One</a
+        >
+      </p>
+    </div>
+    <div class="ion-padding center">
+      <ion-item lines="none">
+        <ion-input placeholder="Email" formControlName="email"> </ion-input>
+        <ion-icon name="mail-outline"></ion-icon>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-input
+          placeholder="Password"
+          formControlName="password"
+        ></ion-input>
+        <ion-icon name="lock-closed-outline"> </ion-icon>
+      </ion-item>
+    </div>
+    <div class="center">
+      <button type="submit">Sign In</button>
+    </div>
+  </form>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-img src="../../../assets/signin.png"></ion-img>
+</ion-footer>

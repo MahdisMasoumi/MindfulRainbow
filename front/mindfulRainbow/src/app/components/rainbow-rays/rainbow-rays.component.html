@@ -1,0 +1,51 @@
+<ion-card style="--background: rgb(241, 249, 235)">
+  <ion-card-header style="text-align: center">
+    <ion-card-title style="text-align: center">
+      <ion-label class="date">
+        {{ rainbowRay.date }}
+      </ion-label></ion-card-title
+    >
+    <ion-card-subtitle style="margin-top: 1rem">
+      <ion-label style="font-family: cursive" class="days">
+        {{ rainbowRay.days }}
+      </ion-label></ion-card-subtitle
+    >
+  </ion-card-header>
+  <hr />
+  <ion-card-content>
+    <ion-list *ngIf="rainbowRay" style="background-color: rgb(241, 249, 235)">
+      <div class="container">
+        <div class="right-element">
+          <img [src]="'http://localhost:3000/uploads/' + rainbowRay.images" />
+        </div>
+        <div class="left-elements">
+          <ion-label style="font-family: cursive">
+            {{ rainbowRay.notes }}
+          </ion-label>
+        </div>
+      </div>
+    </ion-list>
+  </ion-card-content>
+  <ion-item-sliding>
+    <ion-item-options side="start">
+      <ion-item-option
+        class="edit"
+        [routerLink]="['/tabs/edit-rainbowRay', rainbowRay.id]"
+      >
+        <ion-icon slot="icon-only" name="create-outline"></ion-icon>Edit
+      </ion-item-option>
+    </ion-item-options>
+
+    <ion-item
+      text-center
+      style="--background: rgb(36, 85, 76); color: rgb(237, 223, 214)"
+    >
+      <p style="text-align: center; width: 100%">EDIT / DELETE</p>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="onDelete()" class="delete">
+        <ion-icon slot="icon-only" name="trash"></ion-icon>Delete
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-card>

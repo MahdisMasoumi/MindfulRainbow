@@ -1,0 +1,7 @@
+{
+  "name": "mindfulRainbow",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

@@ -1,0 +1,11 @@
+<ion-content [fullscreen]="true">
+  <ion-title style="margin-top: 5rem">Rainbow Goals</ion-title>
+  <ion-fab vertical="top" horizontal="end">
+    <ion-fab-button routerLink="/tabs/create-goals" size="small">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <div *ngFor="let goalItem of goal" style="margin-top: 5rem">
+    <app-goals [goal]="goalItem" (deleteEvent)="deleteGoal($event)"></app-goals>
+  </div>
+</ion-content>

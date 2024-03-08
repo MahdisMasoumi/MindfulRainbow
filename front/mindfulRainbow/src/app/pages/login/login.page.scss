@@ -1,0 +1,44 @@
+ion-content {
+  --padding-start: 2rem;
+  --padding-end: 2rem;
+  --background: rgb(254, 225, 211);
+}
+ion-title {
+  margin-top: 12rem;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.subTitle {
+  font-weight: 600;
+  padding-left: 1.3rem;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+ion-item {
+  --background: #ffffff;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+ion-input {
+  font-size: 1rem;
+}
+button {
+  margin-top: 5rem;
+  width: 12rem;
+  height: 2.5rem;
+  border-radius: 0.7rem;
+  border: #5f5c5c solid 1px;
+  transition: 1s ease-in-out;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: rgb(99, 184, 239);
+  &:hover {
+    background-color: rgb(73, 154, 208);
+    font-size: 1.1rem;
+    scale: 1.05;
+  }
+}
+.center {
+  text-align: center;
+}

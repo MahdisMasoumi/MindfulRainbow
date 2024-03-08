@@ -1,0 +1,74 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ng-container *ngIf="isEditModee; else createTitle2">
+      <ion-title> Edit</ion-title>
+    </ng-container>
+    <ng-template #createTitle2>
+      <ion-title> Create a new rainbow ray </ion-title>
+    </ng-template>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <form [formGroup]="rainbowRaysForm">
+    <ion-list
+      lines="full"
+      style="margin-top: 6rem; padding-left: 2rem; padding-right: 2rem"
+    >
+      <ion-item
+        ><ion-input
+          style="font-family: cursive"
+          type="date"
+          label="Date:"
+          labelPlacement="floating"
+          formControlName="date"
+        >
+        </ion-input
+      ></ion-item>
+      <ion-item>
+        <ion-select
+          style="font-family: cursive"
+          label="Day:"
+          formControlName="days"
+          placeholder="Select a day"
+        >
+          <ion-select-option value="Monday">Monday</ion-select-option>
+          <ion-select-option value="Tuesday">Tuesday</ion-select-option>
+          <ion-select-option value="Wednesday">Wednesday</ion-select-option>
+          <ion-select-option value="Thursday">Thursday</ion-select-option>
+          <ion-select-option value="Friday">Friday</ion-select-option>
+          <ion-select-option value="Saturday">Saturday</ion-select-option>
+          <ion-select-option value="Sunday">Sunday</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item
+        ><ion-input
+          name="image"
+          style="font-family: cursive"
+          type="file"
+          (change)="onFileSelected($event)"
+          accept="image/png, image/jpeg"
+          label="Image:"
+          labelPlacement="floating"
+        >
+        </ion-input
+      ></ion-item>
+      <ion-item
+        ><ion-input
+          style="font-family: cursive"
+          label="Note:"
+          labelPlacement="floating"
+          formControlName="notes"
+        >
+        </ion-input
+      ></ion-item>
+
+      <div style="text-align: center">
+        <button type="submit" (click)="onSubmit()">Submit</button>
+      </div>
+    </ion-list>
+  </form>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-img src="../../../assets/img1foot.png"></ion-img>
+</ion-footer>

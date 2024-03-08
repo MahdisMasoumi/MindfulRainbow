@@ -1,0 +1,31 @@
+ion-item {
+  font-family: cursive;
+  padding-bottom: 1rem;
+}
+ion-title {
+  text-align: center;
+  font-family: cursive;
+}
+ion-toolbar {
+  --background: rgb(249, 255, 243);
+}
+button {
+  margin-top: 5rem;
+  width: 12rem;
+  height: 2.5rem;
+  border-radius: 0.7rem;
+  border: #5f5c5c solid 1px;
+  transition: 1s ease-in-out;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: rgb(99, 184, 239);
+  &:hover {
+    background-color: rgb(73, 154, 208);
+    font-size: 1.1rem;
+    scale: 1.05;
+  }
+}
+ion-select-option {
+  font-family: cursive;
+}

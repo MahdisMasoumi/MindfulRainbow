@@ -1,0 +1,57 @@
+ion-item {
+  font-family: cursive;
+}
+ion-card {
+  --background: rgb(251, 255, 233);
+  border-radius: 2rem;
+}
+ion-list {
+  background-color: rgb(251, 255, 233);
+}
+ion-item {
+  font-family: cursive;
+  --background: rgb(251, 255, 233);
+  color: rgb(0, 0, 0);
+}
+.delete {
+  background-color: rgb(247, 0, 0);
+}
+.edit {
+  background-color: rgb(255, 101, 40);
+}
+.but {
+  --background: rgb(200, 204, 79);
+}
+.container {
+  display: flex;
+  width: 100%;
+}
+.left-elements {
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.right-element {
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+span {
+  font-size: 1.5rem;
+}
+hr {
+  margin: 0 0.8rem;
+  border-top: 1px solid rgb(185, 188, 81);
+}
+.date {
+  padding: 5px 20px;
+  border-radius: 1rem;
+  background-color: rgb(255, 101, 40);
+  color: rgb(243, 248, 96);
+  font-size: 0.9rem;
+  font-weight: 600;
+}

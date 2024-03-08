@@ -1,0 +1,14 @@
+<ion-content [fullscreen]="true">
+  <ion-title style="margin-top: 5rem">Mood Tracker</ion-title>
+  <ion-fab vertical="top" horizontal="end">
+    <ion-fab-button routerLink="/tabs/create-form" size="small">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <div *ngFor="let mentalItem of mentals" style="margin-top: 5rem">
+    <app-mental-tracker
+      [moodTracking]="mentalItem"
+      (deleteEvent)="deleteMentalTracker($event)"
+    ></app-mental-tracker>
+  </div>
+</ion-content>
