@@ -20,12 +20,17 @@ Therapy Tracker: Keep a detailed record of therapy sessions and track progress.
 BENEFITS OF MINDFULRAINBOW
 1. Enhanced Self-Awareness:
 • Understand and track mood fluctuations.
+
 • Expressing your mood using emojis.
+
 2. Creative Expression:
 • Express thoughts and feelings creatively through Rainbow Rays Journaling.
+
 • Add photos to capture the visual representation of your daily experiences.
+
 3. Goal Setting and Tracking:
 • Set and track personal goals using the Rainbow Goals feature.
+
 • Foster a sense of achievement and progress in various aspects of life.
 4. Therapy Progress Monitoring:
 • Keep a detailed record of therapy sessions and monitor progress.
