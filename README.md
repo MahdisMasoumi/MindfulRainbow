@@ -4,3 +4,14 @@ MindfulRainbowis a mobile application designed to offer users a user-friendly pl
 
 Purpose:
 The primary goal of MindfulRainbow is to empower users in tracking and enhancing their mental well-being. By offering features such as mood tracking, journaling with rainbow rays, goal setting, and therapy tracking, the app addresses the diverse aspects of mental health.
+
+
+KEY FEATURES:
+
+Mood Tracker: Monitor and track mood fluctuations using intuitive features.
+
+Rainbow Rays: Express thoughts and feelings creatively through vibrant journaling.
+
+Rainbow Goals: Set and track personal goals with a visually engaging interface.
+
+Therapy Tracker: Keep a detailed record of therapy sessions and track progress.
