@@ -1,5 +1,7 @@
 (https://github.com/MahdisMasoumi/MindfulRainbow/assets/83123093/fcaec105-dab2-4154-abc7-cae425b6e830)
-
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/MahdisMasoumi/MindfulRainbow/assets/83123093/fcaec105-dab2-4154-abc7-cae425b6e830">
+</picture>
 
 Brief Description of MindfulRainbow:
 MindfulRainbowis a mobile application designed to offer users a user-friendly platform for tracking and enhancing their mental well-being. Merging rainbow colors, I aim to enhance user interaction and experience.That's why I named it MindfulRainbow!
