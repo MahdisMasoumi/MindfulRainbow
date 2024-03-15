@@ -35,11 +35,13 @@ BENEFITS OF MINDFULRAINBOW
 • Set and track personal goals using the Rainbow Goals feature.
 
 • Foster a sense of achievement and progress in various aspects of life.
+
 4. Therapy Progress Monitoring:
 
 • Keep a detailed record of therapy sessions and monitor progress.
 
 • Receive reminders for upcoming therapy sessions, ensuring you stay on track.
+
 5. User-Friendly Interface:
 
 • Access a user-friendly platform with a colorful design for an enjoyable experience..
