@@ -1,3 +1,6 @@
+(https://github.com/MahdisMasoumi/MindfulRainbow/assets/83123093/fcaec105-dab2-4154-abc7-cae425b6e830)
+
+
 Brief Description of MindfulRainbow:
 MindfulRainbowis a mobile application designed to offer users a user-friendly platform for tracking and enhancing their mental well-being. Merging rainbow colors, I aim to enhance user interaction and experience.That's why I named it MindfulRainbow!
 
@@ -44,4 +47,4 @@ BENEFITS OF MINDFULRAINBOW
 
 5. User-Friendly Interface:
 
-• Access a user-friendly platform with a colorful design for an enjoyable experience..
+• Access a user-friendly platform with a colorful design for an enjoyable experience.
