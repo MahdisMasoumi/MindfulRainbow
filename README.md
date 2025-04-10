@@ -6,11 +6,11 @@
 
 ## ✨ Key Features
 
-- 🧠 **Mood Tracking:** Log daily emotions and observe patterns over time  
-- 📔 **Therapy Journal:** Record session reflections, emotional shifts, and upcoming appointments  
-- 🎯 **Goal Management:** Define health goals, track progress, and celebrate milestones  
-- 🌈 **Intuitive Interface:** Designed with soft gradients and colors to support mindfulness  
-- 📅 **Daily Engagement:** Encourages consistent check-ins for better emotional awareness
+-  **Mood Tracking:** Log daily emotions and observe patterns over time  
+-  **Therapy Journal:** Record session reflections, emotional shifts, and upcoming appointments  
+-  **Goal Management:** Define health goals, track progress, and celebrate milestones  
+-  **Intuitive Interface:** Designed with soft gradients and colors to support mindfulness  
+-  **Daily Engagement:** Encourages consistent check-ins for better emotional awareness
 
 ---
 ## 🛠️ Tech Stack
@@ -25,7 +25,7 @@
 
 --- 
 
-## 🚀 Installation Steps
+##  Installation Steps
 
 - Clone the repository:
   
