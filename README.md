@@ -2,30 +2,31 @@
 
 **MindfulRainbow** is an interactive mental wellness tracking application designed to empower users in their emotional and psychological well-being journey. The app provides tools for monitoring mood trends, setting and tracking personal goals, and logging therapy sessions — all wrapped in a vibrant, calming, rainbow-themed interface.
 
+---
 
-✨ Key Features
+## ✨ Key Features
 
-🧠 Mood Tracking: Log daily emotions and observe patterns over time
+- 🧠 **Mood Tracking:** Log daily emotions and observe patterns over time  
+- 📔 **Therapy Journal:** Record session reflections, emotional shifts, and upcoming appointments  
+- 🎯 **Goal Management:** Define health goals, track progress, and celebrate milestones  
+- 🌈 **Intuitive Interface:** Designed with soft gradients and colors to support mindfulness  
+- 📅 **Daily Engagement:** Encourages consistent check-ins for better emotional awareness
 
-📔 Therapy Journal: Record session reflections, emotional shifts, and next appointments
+---
+## 🛠️ Tech Stack
 
-🎯 Goal Management: Define health goals, track progress, and celebrate milestones
+**Frontend:**  
+- Angular + Ionic Framework  
+- HTML, SCSS, TypeScript  
 
-🌈 Intuitive Interface: Designed with soft gradients and colors to support mindfulness
+**Backend:**  
+- Node.js with Express.js  
+- MariaDB
 
-📅 Daily Engagement: Encourages consistent check-ins for better emotional awareness
+--- 
 
-🛠️ Tech Stack
+## 🚀 Installation Steps
 
-Frontend:
-Angular + Ionic Framework
-HTML, SCSS, TypeScript
-
-Backend:
-Node.js with Express.js
-MariaDB 
-
-Installation Steps
 - Clone the repository:
   
     git clone https://github.com/MahdisMasoumi/MindfulRainbow.git
