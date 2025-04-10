@@ -3,7 +3,11 @@ ion-item {
 }
 ion-range {
   &::part(tick) {
+<<<<<<< HEAD
     background-color: #000000;
+=======
+    background-color: #4582ba;
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
     height: 4px;
   }
 
@@ -24,8 +28,13 @@ ion-range {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     --pin-background: rgb(44, 87, 99);
     color: rgb(240, 241, 245);
+=======
+    --pin-background: rgb(103, 135, 190);
+    color: rgb(255, 255, 255);
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
     border-radius: 50%;
     transform: scale(1.01);
     font-size: 1rem;
@@ -41,6 +50,7 @@ ion-range {
     }
   }
 
+<<<<<<< HEAD
   // &::part(knob) {
   //   --knob-background: #ff0062;
   // }
@@ -48,6 +58,15 @@ ion-range {
   // &::part(bar) {
   //   --bar-background: rgb(56, 61, 56);
   // }
+=======
+  &::part(knob) {
+    --knob-background: #ff0062;
+  }
+
+  &::part(bar) {
+    --bar-background: rgb(56, 61, 56);
+  }
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
 
   &::part(bar-active) {
     --bar-background-active: linear-gradient(
@@ -62,6 +81,7 @@ ion-range {
     );
   }
 }
+<<<<<<< HEAD
 ion-range::part(pin)::before {
   content: none;
 }
@@ -74,6 +94,8 @@ ion-range::part(bar) {
   background: rgb(0, 0, 0);
 }
 
+=======
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
 .container {
   display: flex;
   width: 100%;
@@ -99,20 +121,38 @@ ion-range::part(bar) {
   background-color: rgb(255, 101, 40);
 }
 ion-card {
+<<<<<<< HEAD
   --background: rgb(181, 215, 237);
   border-radius: 2rem;
 }
 ion-list {
   background-color: rgb(181, 215, 237);
+=======
+  --background: rgb(255, 239, 248);
+  border-radius: 2rem;
+}
+ion-list {
+  background-color: rgb(255, 239, 248);
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
 }
 ion-toolbar {
   --background: rgb(249, 255, 243);
 }
 ion-item {
   font-family: cursive;
+<<<<<<< HEAD
   --background: rgb(181, 215, 237);
   color: rgb(10, 9, 43);
 }
 hr {
   border-top: 1px solid #4582ba;
+=======
+  --background: rgb(255, 239, 248);
+  color: rgb(0, 0, 0);
+}
+hr {
+  border-top: 1px solid rgb(230, 139, 190);
+  // margin-left: 1rem;
+  // margin-right: 1rem;
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
 }

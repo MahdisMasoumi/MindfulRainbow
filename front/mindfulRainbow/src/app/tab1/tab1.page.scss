@@ -1,5 +1,6 @@
 ion-title {
   font-family: cursive;
+<<<<<<< HEAD
   font-size: 2.5rem;
   color: rgb(15, 14, 14);
   letter-spacing: 3px;
@@ -46,11 +47,41 @@ ion-title {
     indigo,
     violet
   );
+=======
+  font-size: 2rem;
+  color: rgb(86, 83, 80);
+  letter-spacing: 3px;
+  font-style: initial;
+  font-weight: 600;
+}
+
+.main_content {
+  --background: rgb(255, 250, 248);
+}
+
+.date {
+  font-family: cursive;
+  color: rgb(86, 83, 80);
+  font-size: 1.2rem;
+  padding-left: 30%;
+}
+.menu {
+  font-family: cursive;
+  color: rgb(86, 83, 80);
+  font-size: 1.5rem;
+}
+.header {
+  background-color: rgb(255, 245, 242);
+}
+.toolbar {
+  --background: rgb(255, 224, 214);
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
 }
 .name {
   margin-top: 4rem;
 }
 .t {
+<<<<<<< HEAD
   --background: linear-gradient(
     88deg,
     rgb(248, 232, 232),
@@ -61,6 +92,9 @@ ion-title {
     rgb(235, 219, 246),
     rgb(248, 218, 248)
   );
+=======
+  --background: rgb(255, 245, 242);
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
 }
 
 ion-menu::part(backdrop) {
@@ -69,6 +103,7 @@ ion-menu::part(backdrop) {
 
 ion-menu::part(container) {
   border-radius: 0 20px 20px 0;
+<<<<<<< HEAD
   box-shadow: 4px 0px 16px rgb(87, 87, 87);
 }
 .main_content .p {
@@ -77,6 +112,16 @@ ion-menu::part(container) {
   font-size: 1.3rem;
   margin-left: 1rem;
   font-weight: 900;
+=======
+  box-shadow: 4px 0px 16px rgb(255, 218, 207);
+}
+p {
+  font-family: cursive;
+  color: rgb(86, 83, 80);
+  font-size: 1.2rem;
+  margin-left: 1.2rem;
+  font-weight: 600;
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
 }
 ion-label {
   font-family: cursive;

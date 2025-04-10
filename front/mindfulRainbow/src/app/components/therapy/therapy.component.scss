@@ -2,6 +2,7 @@ ion-item {
   font-family: cursive;
 }
 ion-card {
+<<<<<<< HEAD
   --background: rgb(198, 172, 215);
   border-radius: 2rem;
 }
@@ -11,6 +12,17 @@ ion-list {
 ion-item {
   font-family: cursive;
   --background: rgb(198, 172, 215);
+=======
+  --background: rgb(251, 255, 233);
+  border-radius: 2rem;
+}
+ion-list {
+  background-color: rgb(251, 255, 233);
+}
+ion-item {
+  font-family: cursive;
+  --background: rgb(251, 255, 233);
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
   color: rgb(0, 0, 0);
 }
 .delete {
@@ -20,8 +32,12 @@ ion-item {
   background-color: rgb(255, 101, 40);
 }
 .but {
+<<<<<<< HEAD
   --background: rgb(84, 45, 93);
   color: rgb(245, 241, 246);
+=======
+  --background: rgb(200, 204, 79);
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
 }
 .container {
   display: flex;
@@ -46,13 +62,22 @@ span {
 }
 hr {
   margin: 0 0.8rem;
+<<<<<<< HEAD
   border-top: 1px solid rgb(84, 45, 93);
+=======
+  border-top: 1px solid rgb(185, 188, 81);
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
 }
 .date {
   padding: 5px 20px;
   border-radius: 1rem;
+<<<<<<< HEAD
   background-color: rgb(84, 45, 93);
   color: rgb(245, 241, 246);
+=======
+  background-color: rgb(255, 101, 40);
+  color: rgb(243, 248, 96);
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
   font-size: 0.9rem;
   font-weight: 600;
 }

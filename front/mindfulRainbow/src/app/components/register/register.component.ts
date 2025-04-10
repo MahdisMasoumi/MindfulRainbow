@@ -80,7 +80,11 @@ export class RegisterComponent {
       next: (result) => {
         console.log(result);
         this.presentAlert('User was created successfully');
+<<<<<<< HEAD
         this.router.navigate(['/tab1']);
+=======
+        this.router.navigate(['/tab5']);
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
       },
       error: (err) => {
         console.log(err);

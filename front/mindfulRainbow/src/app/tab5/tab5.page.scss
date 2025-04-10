@@ -2,9 +2,14 @@ ion-title {
   margin-top: 2rem;
   text-align: center;
   font-family: cursive;
+<<<<<<< HEAD
   font-size: 2.5rem;
   font-weight: 600;
   color: rgb(84, 45, 93);
+=======
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
   letter-spacing: 3px;
   font-style: initial;
   margin-bottom: 7rem;
@@ -15,10 +20,17 @@ ion-fab {
 }
 
 ion-content {
+<<<<<<< HEAD
   --background: rgb(242, 238, 255);
 }
 ion-fab-button {
   --background: rgb(84, 45, 93);
+=======
+  --background: rgb(255, 249, 241);
+}
+ion-fab-button {
+  --background: rgb(230, 95, 43);
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
   --background-activated: #87d361;
   --background-hover: #597a49;
   --border-radius: 15px;
@@ -27,7 +39,11 @@ ion-fab-button {
   --color: black;
 }
 ion-icon {
+<<<<<<< HEAD
   color: aliceblue;
+=======
+  color: rgb(223, 226, 135);
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
   font-weight: bolder;
   font-size: 2rem;
 }

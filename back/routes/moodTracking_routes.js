@@ -3,7 +3,26 @@ const router = express.Router();
 const MoodTracking = require("../models/moodTracking");
 const verifyToken = require("../middlewares/authMiddleware");
 
+<<<<<<< HEAD
 
+=======
+router.post("/", verifyToken, function (req, res) {
+  const userId = req.userId;
+  let moodTrackingInfo = {};
+  moodTrackingInfo.emoji_img = req.body.emoji_img;
+  moodTrackingInfo.date = req.body.date;
+  moodTrackingInfo.notes = req.body.notes;
+  moodTrackingInfo.intensity = req.body.intensity;
+  moodTrackingInfo.user_id = userId;
+  MoodTracking.create(moodTrackingInfo)
+    .then(function (results) {
+      res.status(200).send(results);
+    })
+    .catch(function (error) {
+      res.status(500).send(error);
+    });
+});
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
 
 router.get("/", verifyToken, function (req, res) {
   const userId = req.userId;
@@ -28,6 +47,7 @@ router.get("/:moodTrackingId", function (req, res) {
       res.status(500).send(err);
     });
 });
+<<<<<<< HEAD
 router.post("/", verifyToken, function (req, res) {
   const userId = req.userId;
   let moodTrackingInfo = {};
@@ -44,6 +64,9 @@ router.post("/", verifyToken, function (req, res) {
       res.status(500).send(error);
     });
 });
+=======
+
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
 router.delete("/:moodTrackingId", function (req, res) {
   let moodTrackingId = parseInt(req.params.moodTrackingId);
 

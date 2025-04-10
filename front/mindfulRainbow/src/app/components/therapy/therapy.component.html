@@ -2,7 +2,11 @@
   <ion-card-content>
     <ion-card-title style="padding-bottom: 0.2rem; text-align: center">
       <ion-label style="font-family: cursive" class="date">
+<<<<<<< HEAD
         Session Date: {{ therapy.date }}
+=======
+        {{ therapy.date }}
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
       </ion-label></ion-card-title
     >
     <ion-list>
@@ -10,6 +14,7 @@
         <div class="container">
           <div class="left-elements">
             <ion-label
+<<<<<<< HEAD
               style="
                 color: rgb(15, 1, 18);
                 font-family: cursive;
@@ -17,6 +22,10 @@
                 font-weight: 600;
               "
               >Mood Before Session:
+=======
+              style="font-family: cursive; font-size: 0.65rem; font-weight: 600"
+              >Emotional State Before Therapy:
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
 
               <span *ngIf="therapy.emotion_before === 1">😊</span>
               <span *ngIf="therapy.emotion_before === 2">😞</span>
@@ -32,6 +41,7 @@
           </div>
           <div class="right-elements">
             <ion-label
+<<<<<<< HEAD
               style="
                 color: rgb(15, 1, 18);
                 font-family: cursive;
@@ -39,6 +49,10 @@
                 font-weight: 600;
               "
               >Mood After Session:
+=======
+              style="font-family: cursive; font-size: 0.65rem; font-weight: 600"
+              >Emotional State After Therapy:
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
 
               <span *ngIf="therapy.emotion_after === 1">😊</span>
               <span *ngIf="therapy.emotion_after === 2">😞</span>
@@ -64,6 +78,7 @@
             font-size: 1.2rem;
             font-weight: 600;
             margin-bottom: 2rem;
+<<<<<<< HEAD
             color: rgb(15, 1, 18);
           "
           >Session Reflection
@@ -75,6 +90,13 @@
               text-align: center;
               font-weight: 100;
             "
+=======
+          "
+          >Summary
+          <br />
+          <span
+            style="font-size: 0.9rem; text-align: center; font-weight: 100"
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
             >{{ therapy.summary }}</span
           >
         </ion-label>
@@ -85,13 +107,21 @@
         <ion-label
           style="
             font-family: cursive;
+<<<<<<< HEAD
             color: rgb(15, 1, 18);
+=======
+            color: rgb(230, 95, 43);
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
             margin-top: 2rem;
             text-align: center;
             font-weight: 600;
             font-size: 1.1rem;
           "
+<<<<<<< HEAD
           >Upcoming Session:
+=======
+          >Next Session:
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
           {{ therapy.reminder }}
         </ion-label>
       </ion-item>
@@ -108,7 +138,11 @@
     </ion-item-options>
 
     <ion-item text-center class="but">
+<<<<<<< HEAD
       <p style="text-align: center; width: 100%">EDIT | DELETE</p>
+=======
+      <p style="text-align: center; width: 100%">EDIT / DELETE</p>
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
     </ion-item>
     <ion-item-options side="end">
       <ion-item-option class="delete" (click)="onDelete()">

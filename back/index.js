@@ -1,6 +1,11 @@
 const express = require("express");
+<<<<<<< HEAD
 const app = express();
 const config = require("./config");
+=======
+const config = require("./config");
+const app = express();
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
 const cors = require("cors");
 const moodTrackingRoutes = require("./routes/moodTracking_routes");
 const rainbowGoalsRoutes = require("./routes/rainbowGoals_routes");

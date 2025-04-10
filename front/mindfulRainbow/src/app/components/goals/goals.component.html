@@ -3,6 +3,7 @@
     <ion-card-title style="text-align: center">
       <ion-label
         style="
+<<<<<<< HEAD
           padding: 0.2rem 2rem;
           font-family: cursive;
           color: rgb(240, 241, 245);
@@ -12,6 +13,17 @@
           font-size: 1.2rem;
         "
         >Goal:
+=======
+          padding: 0.2rem 1rem;
+          font-family: cursive;
+          color: rgb(244, 195, 251);
+          background-color: rgb(53, 131, 240);
+          border-radius: 1rem;
+          font-weight: 600;
+          font-size: 1.4rem;
+        "
+      >
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
         {{ goal.goal_name }}
       </ion-label></ion-card-title
     >
@@ -19,12 +31,20 @@
       <ion-label
         style="
           font-family: cursive;
+<<<<<<< HEAD
           color: rgb(18, 27, 61);
+=======
+          color: rgb(89, 89, 89);
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
           font-weight: 600;
           font-size: 1rem;
         "
       >
+<<<<<<< HEAD
         Focus Area: {{ goal.category }}
+=======
+        {{ goal.category }}
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
       </ion-label>
     </ion-card-subtitle>
   </ion-card-header>
@@ -38,9 +58,15 @@
                 font-family: cursive;
                 font-size: 0.8rem;
                 font-weight: 600;
+<<<<<<< HEAD
                 color: rgb(15, 27, 73);
               "
               >Planned Start:
+=======
+                color: rgb(89, 89, 89);
+              "
+              >Start Date:
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
               {{ goal.start_date }}
             </ion-label>
           </div>
@@ -50,10 +76,16 @@
                 font-family: cursive;
                 font-size: 0.8rem;
                 font-weight: 600;
+<<<<<<< HEAD
                 color: rgb(15, 27, 73);
               "
             >
               Goal Deadline:
+=======
+                color: rgb(89, 89, 89);
+              "
+              >Target Date:
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
               {{ goal.target_date }}
             </ion-label>
           </div>
@@ -65,6 +97,7 @@
           style="
             font-family: cursive;
             padding-top: 1rem;
+<<<<<<< HEAD
             font-size: 1rem;
             font-weight: 600;
             text-align: center;
@@ -72,6 +105,15 @@
           "
         >
           Progress Tracker:
+=======
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-align: center;
+            color: rgb(89, 89, 89);
+          "
+        >
+          Completion Status:
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
           <ion-range
             labelPlacement="stacked"
             aria-label="Custom range"
@@ -82,7 +124,11 @@
             [max]="7"
             [value]="goal.milestones"
             [disabled]="true"
+<<<<<<< HEAD
             style="font-family: cursive; font-size: 1.3rem; padding-top: 2rem"
+=======
+            style="font-family: cursive; font-size: 1.3rem; padding-top: 1rem"
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
           ></ion-range>
         </ion-label>
       </ion-item>
@@ -90,7 +136,11 @@
       <!-- <p
         style="
           text-align: center;
+<<<<<<< HEAD
           color: rgb(15, 27, 73);
+=======
+          color: rgb(89, 89, 89);
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
           font-size: 0.8rem;
           font-weight: 600;
           margin-top: 2rem;
@@ -116,10 +166,17 @@
       </ion-item-option>
     </ion-item-options>
 
+<<<<<<< HEAD
     <ion-item text-center style="--background: rgb(39, 52, 101)">
       <p
         [routerLink]="['/tabs/goals-form', goal.id]"
         style="text-align: center; width: 100%; color: rgb(240, 241, 245)"
+=======
+    <ion-item text-center style="--background: rgb(230, 139, 190)">
+      <p
+        [routerLink]="['/tabs/goals-form', goal.id]"
+        style="text-align: center; width: 100%"
+>>>>>>> 545b9fb9a32ba8404f27613f02ca3f08c58c6fcd
       >
         EDIT / DELETE
       </p>
