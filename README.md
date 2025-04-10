@@ -14,6 +14,7 @@ MindfulRainbow is an interactive mental wellness tracking application designed t
 📅 Daily Engagement: Encourages consistent check-ins for better emotional awareness
 
 🛠️ Tech Stack
+
 Frontend:
 Angular + Ionic Framework
 HTML, SCSS, TypeScript
@@ -24,13 +25,19 @@ MariaDB
 
 Installation Steps
 - Clone the repository:
+  
     git clone https://github.com/MahdisMasoumi/MindfulRainbow.git
+  
 - Install frontend dependencies:
+  
     cd front/mindfulRainbow
     npm install
+  
 - Install backend dependencies:
+  
     cd ../../back
     npm install
+  
 - Start the backend server:
     npm start
 - Run the frontend application:
