@@ -1,4 +1,6 @@
-# 🌈 MindfulRainbow is an interactive mental wellness tracking application designed to empower users in their emotional and psychological well-being journey. The app provides tools for monitoring mood trends, setting and tracking personal goals, and logging therapy sessions — all wrapped in a vibrant, calming, rainbow-themed interface.
+# 🌈 MindfulRainbow 
+
+**MindfulRainbow** is an interactive mental wellness tracking application designed to empower users in their emotional and psychological well-being journey. The app provides tools for monitoring mood trends, setting and tracking personal goals, and logging therapy sessions — all wrapped in a vibrant, calming, rainbow-themed interface.
 
 
 ✨ Key Features
