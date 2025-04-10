@@ -46,6 +46,6 @@
 - Run the frontend application:
   
     ng serve
-
+---
 
 📫 Connect with me on [LinkedIn](https://www.linkedin.com/in/mahdismasoumi/)
