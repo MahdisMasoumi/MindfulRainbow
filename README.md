@@ -31,17 +31,23 @@ Installation Steps
 - Install frontend dependencies:
   
     cd front/mindfulRainbow
+  
     npm install
   
 - Install backend dependencies:
   
     cd ../../back
+  
     npm install
   
 - Start the backend server:
+  
     npm start
+  
 - Run the frontend application:
+  
     cd ../front/mindfulRainbow
+  
     ionic serve
 
 
