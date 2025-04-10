@@ -1,0 +1,91 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ng-container *ngIf="isEditMode; else createTitle">
+      <ion-title> Edit</ion-title>
+    </ng-container>
+    <ng-template #createTitle>
+      <ion-title> Create a new goal </ion-title>
+    </ng-template>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <form [formGroup]="goalForm">
+    <ion-list
+      lines="full"
+      style="margin-top: 2rem; padding-left: 2rem; padding-right: 2rem"
+    >
+      <ion-item>
+        <ion-select
+          label="Category"
+          formControlName="category"
+          style="font-family: cursive"
+          placeholder="Select a category"
+        >
+          <ion-select-option value="Health"> Health</ion-select-option>
+          <ion-select-option value="Diet">Diet</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item
+        ><ion-input
+          style="font-family: cursive"
+          label="Goal's name"
+          labelPlacement="floating"
+          formControlName="goal_name"
+        >
+        </ion-input
+      ></ion-item>
+      <ion-item
+        ><ion-input
+          style="font-family: cursive"
+          label="Summary"
+          labelPlacement="floating"
+          formControlName="summary"
+        >
+        </ion-input
+      ></ion-item>
+      <ion-item style="padding-bottom: 2rem; padding-top: 3rem">
+        <ion-range
+          labelPlacement="stacked"
+          label="Completion Status:"
+          formControlName="milestones"
+          aria-label="Custom range"
+          [ticks]="true"
+          [snaps]="true"
+          [pin]="true"
+          [min]="1"
+          [max]="7"
+          [value]="3"
+          style="font-family: cursive; font-size: 1.3rem"
+        ></ion-range
+      ></ion-item>
+
+      <ion-item
+        ><ion-input
+          style="font-family: cursive"
+          type="date"
+          label="Start date"
+          labelPlacement="floating"
+          formControlName="start_date"
+        >
+        </ion-input
+      ></ion-item>
+      <ion-item
+        ><ion-input
+          style="font-family: cursive"
+          type="date"
+          label="Target date"
+          labelPlacement="floating"
+          formControlName="target_date"
+        >
+        </ion-input
+      ></ion-item>
+      <br />
+      <div style="text-align: center">
+        <button type="submit" (click)="onSubmit()">Submit</button>
+      </div>
+    </ion-list>
+  </form>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-img src="../../../assets/img1foot.png"></ion-img>
+</ion-footer>

@@ -1,0 +1,33 @@
+ion-title {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: cursive;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: rgb(84, 45, 93);
+  letter-spacing: 3px;
+  font-style: initial;
+  margin-bottom: 7rem;
+}
+ion-fab {
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+
+ion-content {
+  --background: rgb(242, 238, 255);
+}
+ion-fab-button {
+  --background: rgb(84, 45, 93);
+  --background-activated: #87d361;
+  --background-hover: #597a49;
+  --border-radius: 15px;
+  --box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+    0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --color: black;
+}
+ion-icon {
+  color: aliceblue;
+  font-weight: bolder;
+  font-size: 2rem;
+}

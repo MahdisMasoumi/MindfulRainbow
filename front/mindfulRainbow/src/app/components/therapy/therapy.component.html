@@ -1,0 +1,119 @@
+<ion-card>
+  <ion-card-content>
+    <ion-card-title style="padding-bottom: 0.2rem; text-align: center">
+      <ion-label style="font-family: cursive" class="date">
+        Session Date: {{ therapy.date }}
+      </ion-label></ion-card-title
+    >
+    <ion-list>
+      <ion-item lines="none">
+        <div class="container">
+          <div class="left-elements">
+            <ion-label
+              style="
+                color: rgb(15, 1, 18);
+                font-family: cursive;
+                font-size: 0.8rem;
+                font-weight: 600;
+              "
+              >Mood Before Session:
+
+              <span *ngIf="therapy.emotion_before === 1">😊</span>
+              <span *ngIf="therapy.emotion_before === 2">😞</span>
+              <span *ngIf="therapy.emotion_before === 3">😃</span>
+              <span *ngIf="therapy.emotion_before === 4">😳</span>
+              <span *ngIf="therapy.emotion_before === 5">😒</span>
+              <span *ngIf="therapy.emotion_before === 6">😠</span>
+              <span *ngIf="therapy.emotion_before === 7">😱</span>
+              <span *ngIf="therapy.emotion_before === 8">😰</span>
+              <span *ngIf="therapy.emotion_before === 9">😡</span>
+              <span *ngIf="therapy.emotion_before === 10">😌</span>
+            </ion-label>
+          </div>
+          <div class="right-elements">
+            <ion-label
+              style="
+                color: rgb(15, 1, 18);
+                font-family: cursive;
+                font-size: 0.8rem;
+                font-weight: 600;
+              "
+              >Mood After Session:
+
+              <span *ngIf="therapy.emotion_after === 1">😊</span>
+              <span *ngIf="therapy.emotion_after === 2">😞</span>
+              <span *ngIf="therapy.emotion_after === 3">😃</span>
+              <span *ngIf="therapy.emotion_after === 4">😳</span>
+              <span *ngIf="therapy.emotion_after === 5">😒</span>
+              <span *ngIf="therapy.emotion_after === 6">😠</span>
+              <span *ngIf="therapy.emotion_after === 7">😱</span>
+              <span *ngIf="therapy.emotion_after === 8">😰</span>
+              <span *ngIf="therapy.emotion_after === 9">😡</span>
+              <span *ngIf="therapy.emotion_after === 10">😌</span>
+            </ion-label>
+          </div>
+        </div>
+      </ion-item>
+      <hr />
+      <ion-item lines="none">
+        <ion-label
+          style="
+            font-family: cursive;
+            margin-top: 2rem;
+            padding: 0 2rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: rgb(15, 1, 18);
+          "
+          >Session Reflection
+          <br />
+          <span
+            style="
+              color: rgb(15, 1, 18);
+              font-size: 0.9rem;
+              text-align: center;
+              font-weight: 100;
+            "
+            >{{ therapy.summary }}</span
+          >
+        </ion-label>
+      </ion-item>
+      <hr />
+
+      <ion-item lines="none">
+        <ion-label
+          style="
+            font-family: cursive;
+            color: rgb(15, 1, 18);
+            margin-top: 2rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+          "
+          >Upcoming Session:
+          {{ therapy.reminder }}
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+  <ion-item-sliding>
+    <ion-item-options side="start">
+      <ion-item-option
+        class="edit"
+        [routerLink]="['/tabs/therapy-form', therapy.id]"
+      >
+        <ion-icon slot="icon-only" name="create-outline"></ion-icon>Edit
+      </ion-item-option>
+    </ion-item-options>
+
+    <ion-item text-center class="but">
+      <p style="text-align: center; width: 100%">EDIT | DELETE</p>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option class="delete" (click)="onDelete()">
+        <ion-icon slot="icon-only" name="trash"></ion-icon>Delete
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-card>

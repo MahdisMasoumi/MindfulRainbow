@@ -1,0 +1,10 @@
+ion-label {
+  font-size: 0.6rem;
+}
+.yellow {
+  color: rgb(117, 119, 59);
+
+  &:active {
+    color: rgb(73, 74, 48);
+  }
+}

@@ -1,0 +1,118 @@
+ion-item {
+  font-family: cursive;
+}
+ion-range {
+  &::part(tick) {
+    background-color: #000000;
+    height: 4px;
+  }
+
+  &::part(tick-active) {
+    --bar-background: linear-gradient(
+      to right,
+      #ee82ee,
+      indigo,
+      #0000ff,
+      green,
+      yellow,
+      orange,
+      #ff0000
+    );
+  }
+
+  &::part(pin) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    --pin-background: rgb(44, 87, 99);
+    color: rgb(240, 241, 245);
+    border-radius: 50%;
+    transform: scale(1.01);
+    font-size: 1rem;
+
+    top: -20px;
+
+    min-width: 28px;
+    height: 28px;
+    transition: transform 120ms ease, background 120ms ease;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  // &::part(knob) {
+  //   --knob-background: #ff0062;
+  // }
+
+  // &::part(bar) {
+  //   --bar-background: rgb(56, 61, 56);
+  // }
+
+  &::part(bar-active) {
+    --bar-background-active: linear-gradient(
+      to right,
+      violet,
+      indigo,
+      blue,
+      green,
+      yellow,
+      orange,
+      red
+    );
+  }
+}
+ion-range::part(pin)::before {
+  content: none;
+}
+
+ion-range::part(knob) {
+  background: rgb(44, 87, 99);
+}
+
+ion-range::part(bar) {
+  background: rgb(0, 0, 0);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+.left-elements {
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.right-element {
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.delete {
+  background-color: rgb(247, 0, 0);
+}
+.edit {
+  background-color: rgb(255, 101, 40);
+}
+ion-card {
+  --background: rgb(181, 215, 237);
+  border-radius: 2rem;
+}
+ion-list {
+  background-color: rgb(181, 215, 237);
+}
+ion-toolbar {
+  --background: rgb(249, 255, 243);
+}
+ion-item {
+  font-family: cursive;
+  --background: rgb(181, 215, 237);
+  color: rgb(10, 9, 43);
+}
+hr {
+  border-top: 1px solid #4582ba;
+}

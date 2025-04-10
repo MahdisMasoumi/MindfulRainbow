@@ -1,0 +1,133 @@
+<ion-card>
+  <ion-card-header style="text-align: center">
+    <ion-card-title style="text-align: center">
+      <ion-label
+        style="
+          padding: 0.2rem 2rem;
+          font-family: cursive;
+          color: rgb(240, 241, 245);
+          background-color: rgb(39, 52, 101);
+          border-radius: 1rem;
+          font-weight: 500;
+          font-size: 1.2rem;
+        "
+        >Goal:
+        {{ goal.goal_name }}
+      </ion-label></ion-card-title
+    >
+    <ion-card-subtitle>
+      <ion-label
+        style="
+          font-family: cursive;
+          color: rgb(18, 27, 61);
+          font-weight: 600;
+          font-size: 1rem;
+        "
+      >
+        Focus Area: {{ goal.category }}
+      </ion-label>
+    </ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-list>
+      <ion-item lines="none">
+        <div class="container">
+          <div class="left-elements">
+            <ion-label
+              style="
+                font-family: cursive;
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: rgb(15, 27, 73);
+              "
+              >Planned Start:
+              {{ goal.start_date }}
+            </ion-label>
+          </div>
+          <div class="right-elements">
+            <ion-label
+              style="
+                font-family: cursive;
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: rgb(15, 27, 73);
+              "
+            >
+              Goal Deadline:
+              {{ goal.target_date }}
+            </ion-label>
+          </div>
+        </div>
+      </ion-item>
+      <!-- <hr /> -->
+      <ion-item lines="none">
+        <ion-label
+          style="
+            font-family: cursive;
+            padding-top: 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            color: rgb(15, 27, 73);
+          "
+        >
+          Progress Tracker:
+          <ion-range
+            labelPlacement="stacked"
+            aria-label="Custom range"
+            [ticks]="true"
+            [snaps]="true"
+            [pin]="true"
+            [min]="1"
+            [max]="7"
+            [value]="goal.milestones"
+            [disabled]="true"
+            style="font-family: cursive; font-size: 1.3rem; padding-top: 2rem"
+          ></ion-range>
+        </ion-label>
+      </ion-item>
+      <hr />
+      <!-- <p
+        style="
+          text-align: center;
+          color: rgb(15, 27, 73);
+          font-size: 0.8rem;
+          font-weight: 600;
+          margin-top: 2rem;
+        "
+      ></p> -->
+      <ion-item lines="none">
+        <ion-label
+          style="font-family: cursive; font-size: 0.8rem; color: rgb(0, 0, 0)"
+        >
+          {{ goal.summary }}
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+  <ion-item-sliding>
+    <ion-item-options side="start">
+      <ion-item-option
+        class="edit"
+        [routerLink]="['/tabs/goals-form', goal.id]"
+        style="font-family: cursive"
+      >
+        <ion-icon slot="icon-only" name="create-outline"></ion-icon>Edit
+      </ion-item-option>
+    </ion-item-options>
+
+    <ion-item text-center style="--background: rgb(39, 52, 101)">
+      <p
+        [routerLink]="['/tabs/goals-form', goal.id]"
+        style="text-align: center; width: 100%; color: rgb(240, 241, 245)"
+      >
+        EDIT / DELETE
+      </p>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option class="delete" (click)="onDelete()">
+        <ion-icon slot="icon-only" name="trash"></ion-icon>Delete
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-card>

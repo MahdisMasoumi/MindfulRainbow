@@ -1,0 +1,98 @@
+ion-item {
+  font-family: cursive;
+  --background: rgb(255, 231, 153);
+  color: rgb(0, 0, 0);
+}
+
+ion-select-option {
+  font-family: cursive;
+}
+
+ion-range::part(tick) {
+  background: rgb(35, 29, 18);
+}
+
+ion-range::part(tick-active) {
+  background: rgb(63, 9, 13);
+}
+
+ion-range::part(pin) {
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(254, 212, 153);
+  color: rgb(55, 38, 22);
+  border-radius: 50%;
+  transform: scale(1.01);
+  top: -20px;
+  min-width: 28px;
+  height: 28px;
+  transition: transform 120ms ease, background 120ms ease;
+}
+
+ion-range::part(pin)::before {
+  content: none;
+}
+
+ion-range::part(knob) {
+  background: rgb(225, 81, 77);
+}
+
+ion-range::part(bar) {
+  background: rgb(138, 117, 72);
+}
+
+ion-range::part(bar-active) {
+  background: rgb(225, 81, 77);
+}
+
+ion-card {
+  --background: rgb(255, 231, 153);
+  border-radius: 2rem;
+}
+ion-list {
+  background-color: rgb(255, 231, 153);
+}
+.container {
+  display: flex;
+  width: 100%;
+}
+.left-elements {
+  text-align: center;
+  flex: 2.5;
+  padding: 0 0px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.right-element {
+  display: flex;
+  flex: 0.5;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+span {
+  font-size: 1.8rem;
+}
+.date {
+  padding: 5px 20px;
+  border-radius: 1rem;
+  background-color: rgb(254, 212, 153);
+  color: rgb(55, 38, 22);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+hr {
+  margin-bottom: 2rem;
+  border-top: 1px solid rgb(255, 208, 142);
+}
+.delete {
+  background-color: rgb(247, 0, 0);
+}
+.edit {
+  background-color: rgb(255, 101, 40);
+}

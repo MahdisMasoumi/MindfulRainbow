@@ -1,0 +1,84 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ng-container *ngIf="isEditMode; else createTitle">
+      <ion-title style="font-family: cursive"> EDIT</ion-title>
+    </ng-container>
+    <ng-template #createTitle>
+      <ion-title style="font-family: cursive; text-align: center">
+        Create a new mood tracker</ion-title
+      >
+    </ng-template>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <form [formGroup]="mentalForm" class="form">
+    <ion-list
+      lines="full"
+      style="margin-top: 6rem; padding-left: 2rem; padding-right: 2rem"
+    >
+      <ion-item style="padding-bottom: 1rem"
+        ><ion-input
+          type="date"
+          label="Date:"
+          labelPlacement="floating"
+          formControlName="date"
+          style="font-family: cursive"
+        >
+        </ion-input
+      ></ion-item>
+      <ion-item style="padding-bottom: 1rem">
+        <ion-select
+          label="Mood:"
+          formControlName="emoji_img"
+          style="font-family: cursive"
+          placeholder="Select an emoji"
+        >
+          <ion-select-option value="1">😊 happiness</ion-select-option>
+          <ion-select-option value="2">😞 disappointed</ion-select-option>
+          <ion-select-option value="3">😃 joy</ion-select-option>
+          <ion-select-option value="4">😳 embarrassed </ion-select-option>
+          <ion-select-option value="5">😒 disapproving </ion-select-option>
+          <ion-select-option value="6">😠 annoyed</ion-select-option>
+          <ion-select-option value="7">😱 horrified</ion-select-option>
+          <ion-select-option value="8">😰 panicked</ion-select-option>
+          <ion-select-option value="9">😡 mad</ion-select-option>
+          <ion-select-option value="10">😌 peace</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item style="padding-bottom: 1rem">
+        <ion-range
+          labelPlacement="stacked"
+          label="Intensity:"
+          formControlName="intensity"
+          aria-label="Custom range"
+          [ticks]="true"
+          [snaps]="true"
+          [pin]="true"
+          [min]="0"
+          [max]="10"
+          [value]="5"
+          style="font-family: cursive; font-size: 1.3rem"
+        ></ion-range
+      ></ion-item>
+      <ion-item style="padding-bottom: 1rem"
+        ><ion-input
+          label="Note:"
+          labelPlacement="floating"
+          formControlName="notes"
+          style="font-family: cursive"
+        >
+        </ion-input
+      ></ion-item>
+
+      <br />
+      <div style="text-align: center">
+        <button type="submit" class="button" (click)="onSubmit()">
+          Submit
+        </button>
+      </div>
+    </ion-list>
+  </form>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-img src="../../../assets/img1foot.png"></ion-img>
+</ion-footer>

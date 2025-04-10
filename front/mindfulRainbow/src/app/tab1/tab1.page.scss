@@ -1,0 +1,84 @@
+ion-title {
+  font-family: cursive;
+  font-size: 2.5rem;
+  color: rgb(15, 14, 14);
+  letter-spacing: 3px;
+  font-style: initial;
+  font-weight: 900;
+}
+
+.main_content {
+  --background: linear-gradient(
+    88deg,
+    rgb(248, 232, 232),
+    rgb(249, 241, 227),
+    rgb(251, 251, 221),
+    rgb(215, 246, 215),
+    rgb(219, 237, 249),
+    rgb(235, 219, 246),
+    rgb(248, 218, 248)
+  );
+}
+
+.date {
+  font-weight: 900;
+  font-family: cursive;
+  color: rgb(15, 14, 14);
+  font-size: 1.1rem;
+  padding-left: 25%;
+}
+.menu {
+  margin-left: 1.5rem;
+  font-family: cursive;
+  font-weight: 900;
+  color: rgb(7, 7, 7);
+  font-size: 1.5rem;
+}
+
+.main-content .toolbar {
+  --background: linear-gradient(
+    88deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+}
+.name {
+  margin-top: 4rem;
+}
+.t {
+  --background: linear-gradient(
+    88deg,
+    rgb(248, 232, 232),
+    rgb(249, 241, 227),
+    rgb(251, 251, 221),
+    rgb(215, 246, 215),
+    rgb(219, 237, 249),
+    rgb(235, 219, 246),
+    rgb(248, 218, 248)
+  );
+}
+
+ion-menu::part(backdrop) {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+ion-menu::part(container) {
+  border-radius: 0 20px 20px 0;
+  box-shadow: 4px 0px 16px rgb(87, 87, 87);
+}
+.main_content .p {
+  font-family: cursive;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  font-weight: 900;
+}
+ion-label {
+  font-family: cursive;
+  color: rgb(86, 83, 80);
+}

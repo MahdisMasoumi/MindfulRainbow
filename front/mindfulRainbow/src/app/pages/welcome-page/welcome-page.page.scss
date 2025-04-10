@@ -1,0 +1,40 @@
+div {
+  text-align: center;
+}
+
+.title {
+  padding-left: 1rem;
+  margin-top: 5rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #000000;
+  text-transform: uppercase;
+  &_sub {
+    padding-left: 1rem;
+    margin-top: -1rem;
+    font-size: 1.3rem;
+    color: #000000;
+  }
+}
+
+button {
+  margin-top: 2rem;
+  width: 12rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  border: #545252 solid 1px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  transition: 1s ease-in-out;
+  background-color: rgb(99, 184, 239);
+  &:hover {
+    background-color: rgb(73, 154, 208);
+    font-size: 1.1rem;
+    scale: 1.05;
+  }
+}
+ion-content {
+  --background: rgb(254, 225, 211);
+  background-size: cover;
+}

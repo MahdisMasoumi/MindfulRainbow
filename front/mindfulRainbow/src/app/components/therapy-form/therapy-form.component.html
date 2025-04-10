@@ -1,0 +1,93 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ng-container *ngIf="isEditMode; else createTitle">
+      <ion-title> EDIT</ion-title>
+    </ng-container>
+    <ng-template #createTitle>
+      <ion-title> Create a new therapy tracker</ion-title>
+    </ng-template>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <form [formGroup]="therapyForm">
+    <ion-list
+      lines="full"
+      style="margin-top: 6rem; padding-left: 2rem; padding-right: 2rem"
+    >
+      <ion-item style="padding-bottom: 1rem"
+        ><ion-input
+          type="date"
+          label="Date:"
+          labelPlacement="floating"
+          formControlName="date"
+          style="font-family: cursive"
+        >
+        </ion-input
+      ></ion-item>
+      <ion-item>
+        <ion-select
+          style="font-family: cursive"
+          label="Mood before therapy: "
+          formControlName="emotion_before"
+        >
+          <ion-select-option value="1">😊</ion-select-option>
+          <ion-select-option value="2">😞 disappointed</ion-select-option>
+          <ion-select-option value="3">😃 joy</ion-select-option>
+          <ion-select-option value="4">😳 embarrassed </ion-select-option>
+          <ion-select-option value="5">😒 disapproving </ion-select-option>
+          <ion-select-option value="6">😠 annoyed</ion-select-option>
+          <ion-select-option value="7">😱 horrified</ion-select-option>
+          <ion-select-option value="8">😰 panicked</ion-select-option>
+          <ion-select-option value="9">😡 mad</ion-select-option>
+          <ion-select-option value="10">😌 peace</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-select
+          style="font-family: cursive"
+          label="Mood after therapy:"
+          formControlName="emotion_after"
+        >
+          <ion-select-option value="1">😊</ion-select-option>
+          <ion-select-option value="2">😞 disappointed</ion-select-option>
+          <ion-select-option value="3">😃 joy</ion-select-option>
+          <ion-select-option value="4">😳 embarrassed </ion-select-option>
+          <ion-select-option value="5">😒 disapproving </ion-select-option>
+          <ion-select-option value="6">😠 annoyed</ion-select-option>
+          <ion-select-option value="7">😱 horrified</ion-select-option>
+          <ion-select-option value="8">😰 panicked</ion-select-option>
+          <ion-select-option value="9">😡 mad</ion-select-option>
+          <ion-select-option value="10">😌 peace</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item
+        ><ion-input
+          style="font-family: cursive"
+          label="Summary:"
+          labelPlacement="floating"
+          formControlName="summary"
+        >
+        </ion-input
+      ></ion-item>
+
+      <ion-item
+        ><ion-input
+          style="font-family: cursive"
+          type="date"
+          label="Next Session:"
+          labelPlacement="floating"
+          formControlName="reminder"
+        >
+        </ion-input
+      ></ion-item>
+
+      <br />
+      <div style="text-align: center">
+        <button type="submit" (click)="onSubmit()">Submit</button>
+      </div>
+    </ion-list>
+  </form>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-img src="../../../assets/therapy.png"></ion-img>
+</ion-footer>
